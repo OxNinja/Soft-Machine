@@ -95,7 +95,10 @@ def jmp(vm, opcode):
 
 # prefixing to avoid bad behavior
 def _exit(vm, opcode):
-    pass
+    if vm.regs.a < 0 or vm.regs.a > 232:
+        print(f"Unexpected value for a: {vm.regs.a}. Must be between 0 (included) and 232 (included).")
+        exit(1)
+    exit(vm.regs.a)
 
 INSTRUCTIONS = (
         mov,
