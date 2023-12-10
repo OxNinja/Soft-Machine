@@ -5,9 +5,9 @@ Python custom virtual machine.
 ## Features
 
 * [ ] Registers
-    * [ ] Basic registers
+    * [x] Basic registers
     * [ ] Flags
-        * [x] Zero flag 
+        * [ ] Zero flag 
 * [ ] Stack
     * [ ] LIFO
     * [ ] Max size 
@@ -15,8 +15,8 @@ Python custom virtual machine.
 * [ ] Heap
     * [ ] Max size
 * [ ] Instructions
-    * [ ] `add reg, val`
-    * [ ] `add reg, reg`
+    * [x] `add reg, val`
+    * [x] `add reg, reg`
     * [ ] `sub reg, val`
     * [ ] `sub reg, reg`
     * [ ] `cmp reg, val`
@@ -36,9 +36,9 @@ Python custom virtual machine.
 * [ ] Disassemble code
     * [ ] From file
     * [ ] From stdin
-* [ ] Exec instructions
-    * [ ] From file
-    * [ ] From stdin
+* [x] Exec instructions
+    * [x] From file
+    * [x] From stdin
 
 ## Install
 
