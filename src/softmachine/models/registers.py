@@ -5,6 +5,15 @@ class Registers:
         self.c = 0
         self.d = 0
 
+        # only used to calculate the number of registers
+        # not usable for setting the registers because Python does make a copy and not reference the original object
+        self.regs = [
+                self.a,
+                self.b,
+                self.c,
+                self.d
+                ]
+
         self.flags = 0
 
     def __repr__(self):
