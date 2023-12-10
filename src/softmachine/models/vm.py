@@ -8,6 +8,14 @@ class VM:
         self.regs = Registers()
         self.opcode_size = 8
 
+    def __repr__(self):
+        data = f"""===== VM =====
+{self.regs}
+-----
+{self.stack}"""
+
+        return data
+
     def exec(self, code):
         # parse code and exec instructions accordingly
         # for the moment 1 line per instruction 
@@ -24,5 +32,4 @@ class VM:
                 print(f"Error executing opcode at offset {i} ({hex(opcode)})")
                 exit(1)
 
-        print(self.regs)
-        print(self.stack)
+        print(self)

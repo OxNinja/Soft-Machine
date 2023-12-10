@@ -21,8 +21,8 @@ Python custom virtual machine.
     * [ ] `sub reg, reg`
     * [ ] `cmp reg, val`
     * [ ] `cmp reg, reg`
-    * [ ] `mov reg, val`
-    * [ ] `mov reg, reg`
+    * [x] `mov reg, val`
+    * [x] `mov reg, reg`
     * [ ] `push val`
     * [ ] `push reg`
     * [ ] `pop reg`

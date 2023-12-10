@@ -20,8 +20,8 @@ class Stack:
         self.size = len(self.stack)
 
     def __repr__(self):
-        data = "===== Stack: =====\n"
+        data = "Stack:\n"
         for i in range(self.size):
             data += f"{i}:\t{self.stack[i]}\n"
-        data += "=====        ====="
+        data += "====="
         return data
