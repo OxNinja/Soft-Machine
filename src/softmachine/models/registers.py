@@ -1,3 +1,5 @@
+from softmachine.models.flags import FLAGS_MASKS
+
 class Registers:
     def __init__(self):
         self.a = 0
@@ -58,3 +60,10 @@ class Registers:
                 self.c,
                 self.d
                 )
+
+    def set_flag_zero(self, value):
+        if value == True:
+            self.flags |= FLAGS_MASKS["zero"]
+        else:
+            self.flags |= FLAGS_MASKS["zero"]
+            self.flags ^= FLAGS_MASKS["zero"]

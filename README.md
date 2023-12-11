@@ -7,7 +7,7 @@ Python custom virtual machine.
 * [ ] Registers
     * [x] Basic registers
     * [ ] Flags
-        * [ ] Zero flag 
+        * [x] Zero flag 
 * [ ] Stack
     * [ ] LIFO
     * [ ] Max size 
@@ -17,10 +17,10 @@ Python custom virtual machine.
 * [ ] Instructions
     * [x] `add reg, val`
     * [x] `add reg, reg`
-    * [ ] `sub reg, val`
-    * [ ] `sub reg, reg`
-    * [ ] `cmp reg, val`
-    * [ ] `cmp reg, reg`
+    * [x] `sub reg, val`
+    * [x] `sub reg, reg`
+    * [x] `cmp reg, val`
+    * [x] `cmp reg, reg`
     * [x] `mov reg, val`
     * [x] `mov reg, reg`
     * [ ] `push val`
@@ -29,7 +29,7 @@ Python custom virtual machine.
     * [ ] `jmp addr`
     * [ ] `jmp label`
     * [ ] `call func`
-    * [ ] `exit`
+    * [x] `exit`
 * [ ] Assemble code
     * [ ] From file
     * [ ] From stdin
@@ -58,7 +58,7 @@ pip install -e .
 ## Use
 
 ```sh
-soft-machine exec --file code.txt
+soft-machine exec -s "0x31034567;0x30001000;0x33100000;0x02110000;0x03000000;0x41120000;0x80000000"
 soft-machine assemble --stdin "mov a, 11; mov b, 0x45; exit"
 soft-machine disassemble --file code.bin
 ```
