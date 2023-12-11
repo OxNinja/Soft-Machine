@@ -7,6 +7,12 @@ def cli():
     pass
 
 @cli.command()
+@click.option("-n", "--number", "number", type=int, default=0xffff)
+def stresstest(number):
+    vm = VM()
+    vm.stress_test(number)
+
+@cli.command()
 @click.option("-f", "--file", "file")
 @click.option("-s", "--stdin", "stdin")
 def exec(file, stdin):

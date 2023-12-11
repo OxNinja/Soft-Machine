@@ -1,5 +1,5 @@
 class Stack:
-    def __init__(self, max_size=0xffff):
+    def __init__(self, max_size=0xffffff):
         self.stack = list()
         self.max_size = max_size
         self.size = len(self.stack)

@@ -33,3 +33,9 @@ class VM:
                 exit(1)
 
         print(self)
+
+    def stress_test(self, n):
+        for x in range(n):
+            INSTRUCTIONS[1](self, 0x10ffffff)
+        for x in range(n):
+            INSTRUCTIONS[2](self, 0x20000000)

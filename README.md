@@ -62,3 +62,9 @@ soft-machine exec -s "0x31034567;0x30001000;0x33100000;0x02110000;0x03000000;0x4
 soft-machine assemble --stdin "mov a, 11; mov b, 0x45; exit"
 soft-machine disassemble --file code.bin
 ```
+
+Stress test on push/pop:
+
+```sh 
+time softmachine stresstest -n 100000
+```
