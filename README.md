@@ -9,8 +9,8 @@ Python custom virtual machine.
     * [ ] Flags
         * [x] Zero flag 
 * [ ] Stack
-    * [ ] LIFO
-    * [ ] Max size 
+    * [x] LIFO
+    * [x] Max size 
     * [ ] Stackframes
 * [ ] Heap
     * [ ] Max size
@@ -23,9 +23,9 @@ Python custom virtual machine.
     * [x] `cmp reg, reg`
     * [x] `mov reg, val`
     * [x] `mov reg, reg`
-    * [ ] `push val`
-    * [ ] `push reg`
-    * [ ] `pop reg`
+    * [x] `push val`
+    * [x] `push reg`
+    * [x] `pop reg`
     * [ ] `jmp addr`
     * [ ] `jmp label`
     * [ ] `call func`

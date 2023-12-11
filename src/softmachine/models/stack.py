@@ -16,7 +16,7 @@ class Stack:
 
     def update(self):
         # update size
-        # we could just self.size += 1, but just to be sure
+        # maybe @property instead?
         self.size = len(self.stack)
 
     def __repr__(self):
