@@ -30,12 +30,16 @@ Python custom virtual machine.
     * [ ] `jmp label`
     * [ ] `call func`
     * [x] `exit`
+* [ ] Preprocessor
+    * [ ] Strip labels from code
 * [ ] Assemble code
     * [ ] From file
     * [ ] From stdin
+    * [ ] Parser
 * [ ] Disassemble code
     * [ ] From file
     * [ ] From stdin
+    * [ ] Invert parser
 * [x] Exec instructions
     * [x] From file
     * [x] From stdin
